@@ -68,10 +68,13 @@
 
       <div id="win-message" class="d-none">
         <!-- TODO: можно добавить красные квадратики с отрицательным весом и делать счёт 
-          попаданий в конце как разницу очков за попадание минус штрафные -->
+          попаданий в конце как разницу очков за попадание минус штрафные  DONE-->
         <h2>Вы нашли 10 зелёных квадратов за <span id="total-time-played"></span> секунд</h2>
         <h2>Промахов: <span id="total-miss"></span></h2>
-        <h2>Cчёт попаданий (все клики - ошибочные): <span id="total-score"></span></h2>
+        <h2>Cчёт попаданий (суммарный вес попаданий  - суммарный вес ошибок (max-10)): <span id="total-score"></span></h2>
+      </div>
+      <div id="wrong-message" class="wrong-none">
+        Вы не начали игру!
       </div>
       <div class="row">
         <button id="button-reload" class="btn btn-primary">Играть заново</button>
